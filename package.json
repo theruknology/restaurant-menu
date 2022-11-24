@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-menu",
+  "version": "1.0.0",
+  "description": "Restaurant Menu: A single page web project to practice Webpack Module Bundler's basic functions.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theruknology/restaurant-menu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theruknology/restaurant-menu/issues"
+  },
+  "homepage": "https://github.com/theruknology/restaurant-menu#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
