@@ -1,5 +1,13 @@
+body {
+    background-color: rgb(19, 2, 39);
+}
+
 .home {
     color: aqua;
     font-family: sans-serif;
     font-size: 2rem;
+}
+
+.test {
+    color: red;
 }

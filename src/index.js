@@ -10,4 +10,6 @@ function component() {
     return element;
 }
 
-document.body.appendChild(component());
+const initialComp = component();
+
+document.body.appendChild(initialComp);
