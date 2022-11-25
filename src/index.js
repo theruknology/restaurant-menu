@@ -1,15 +1,26 @@
 import _ from 'lodash';
 import './style.css'
 
-function component() {
-    const element = document.createElement('div');
+function createNavbar(logo, ...components) {
 
-    element.innerHTML = 'We Getting Started!';
-    element.classList.add('home');
+    const navbar = document.createElement('nav');
 
-    return element;
+    navbar.classList.add('primary-nav');
+    navbar.innerHTML = `<a class="logo">${logo}</a>`;
+    
+    const links = document.createElement('ul');
+    links.classList.add('nav-links');
+
+    for (let i = 0; i < components.length; i++) {
+        links.innerHTML += `<li> <a id="${components[i]}">${components[i]}</a> </li>`;
+    }
+
+    navbar.appendChild(links);
+
+    return navbar;
 }
 
-const initialComp = component();
 
-document.body.appendChild(initialComp);
+const navigation = createNavbar('GoodFood', 'Home', 'Menu', 'About', 'Contact');
+
+document.body.appendChild(navigation);
